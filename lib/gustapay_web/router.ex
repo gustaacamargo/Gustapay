@@ -8,7 +8,7 @@ defmodule GustapayWeb.Router do
   scope "/api", GustapayWeb do
     pipe_through :api
 
-    get "/", WelcomeController, :index
+    get "/:filename", WelcomeController, :index
   end
 
   # Enables LiveDashboard only for development
