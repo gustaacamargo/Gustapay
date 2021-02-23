@@ -4,11 +4,6 @@ defmodule Gustapay.Strings do
   end
 
   defp handle_name(result) do
-    if !is_binary(result) do
-      result = Integer.to_string(result)
-      result
-    end
-
     result =
       result
       |> String.trim()
