@@ -10,6 +10,8 @@ defmodule GustapayWeb.Router do
 
     get "/:filename", WelcomeController, :index
     get "/strings/:name", StringController, :index
+
+    post "/users", UsersController, :create
   end
 
   # Enables LiveDashboard only for development
